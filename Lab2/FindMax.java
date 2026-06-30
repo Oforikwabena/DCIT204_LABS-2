@@ -5,9 +5,7 @@ public class FindMax {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("===========================================");
         System.out.println("       Interactive Find Maximum Program    ");
-        System.out.println("===========================================");
 
         int size = 0;
         while (size <= 0) {
@@ -46,9 +44,7 @@ public class FindMax {
             }
         }
 
-        System.out.println("\n-------------------------------------------");
         System.out.println("                   RESULTS                ");
-        System.out.println("-------------------------------------------");
         System.out.print("Array: [ ");
         for (int i = 0; i < size; i++) {
             System.out.print(array[i]);
@@ -57,7 +53,7 @@ public class FindMax {
         System.out.println(" ]");
         System.out.println("Maximum Value : " + maxValue);
         System.out.println("Found at Index: " + maxIndex);
-        System.out.println("-------------------------------------------");
+
 
         scanner.close();
     }

@@ -5,10 +5,7 @@ public class PairSum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("===========================================");
         System.out.println("     Interactive Pair Sum Program          ");
-        System.out.println("     (Brute Force Algorithm)               ");
-        System.out.println("===========================================");
 
         int size = 0;
         while (size <= 0) {
@@ -45,17 +42,13 @@ public class PairSum {
         }
         int targetSum = scanner.nextInt();
 
-        System.out.println("\n-------------------------------------------");
         System.out.println("                   RESULTS                ");
-        System.out.println("-------------------------------------------");
         System.out.print("Array     : [ ");
         for (int i = 0; i < size; i++) {
             System.out.print(array[i]);
             if (i < size - 1) System.out.print(", ");
         }
-        System.out.println(" ]");
         System.out.println("Target Sum: " + targetSum);
-        System.out.println("-------------------------------------------");
 
         boolean pairFound = false;
 
@@ -78,7 +71,7 @@ public class PairSum {
             System.out.println("No pair found that sums to " + targetSum + ".");
         }
 
-        System.out.println("-------------------------------------------");
+
 
         scanner.close();
     }
